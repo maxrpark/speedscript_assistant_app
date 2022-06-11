@@ -1,4 +1,5 @@
-import { ref } from '../../node_modules/speedscript/lib/index.js';
+// import { ref } from '../../node_modules/speedscript/lib/index.js';
+let { ref } = require('speedscript');
 import showYear from './utils/showYear.js';
 showYear();
 import renderList from './utils/renderList.js';

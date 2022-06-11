@@ -1,4 +1,6 @@
-import { ref, useFetch } from '../../node_modules/speedscript/lib/index.js';
+// import { ref, useFetch } from '../../node_modules/speedscript/lib/index.js';
+
+let { ref, useFetch } = require('speedscript');
 
 import showYear from './utils/showYear.js';
 
