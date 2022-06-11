@@ -1,4 +1,4 @@
-import { ref } from 'speedscript';
+import { ref } from '../../../node_modules/speedscript/lib/index.js';
 import { todoList } from '../todo.js';
 const todoContainer = ref('todoContainer');
 const removeItems = ref('removeAll');
