@@ -15,5 +15,5 @@ I hope, I keep learning new onces in the future so this project expects more and
 ## Visit the website
 
 You can take a look at the website by clicking the next link
-[Assitant TypeScript App](https://speedscript.netlify.app/).
+[Assitant TypeScript App](https://speedscript-assistant-app.netlify.app/).
 
