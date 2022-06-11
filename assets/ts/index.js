@@ -1,20 +1,23 @@
 import { ref, useFetch } from '../../node_modules/speedscript/lib/index.js';
+import showYear from './utils/showYear.js';
+showYear();
 const title = ref('mainTitle');
 const container = ref('mainContainer');
 const url = 'https://assitant-app.netlify.app/api/projects-api';
 title.ref.textContent = 'Loading...';
 const { data } = await useFetch(url);
 if (data) {
-  const projects = data
-    .map((project) => {
-      const { name, url, gitUrl } = project;
-      let projectUrl;
-      if (name === 'SpeedScript') {
-        projectUrl = '/todo.html';
-      } else {
-        projectUrl = project.projectUrl;
-      }
-      return `
+    const projects = data
+        .map((project) => {
+        const { name, url, gitUrl } = project;
+        let projectUrl;
+        if (name === 'SpeedScript') {
+            projectUrl = '/todo.html';
+        }
+        else {
+            projectUrl = project.projectUrl;
+        }
+        return `
     <div class='card'>
      <h3 class='project-name'>${name}</h3>
      <img src='${url}' alt='${name}' class='img' />
@@ -45,9 +48,10 @@ if (data) {
   </div>
       `;
     })
-    .join(' ');
-  container.ref.innerHTML = projects;
-  title.ref.textContent = 'SpeedScript Assistant App';
-} else {
-  console.log('error');
+        .join(' ');
+    container.ref.innerHTML = projects;
+    title.ref.textContent = 'SpeedScript Assistant App';
+}
+else {
+    console.log('error');
 }

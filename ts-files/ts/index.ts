@@ -2,6 +2,7 @@ import { ref, useFetch } from '../../node_modules/speedscript/lib/index.js';
 
 import showYear from './utils/showYear.js';
 
+showYear();
 const title = ref('mainTitle');
 const container = ref('mainContainer');
 const url = 'https://assitant-app.netlify.app/api/projects-api';
@@ -21,7 +22,7 @@ if (data) {
     .map((project: Project) => {
       const { name, url, gitUrl } = project;
       let projectUrl;
-      if (name === 'TypeScript') {
+      if (name === 'SpeedScript') {
         projectUrl = '/todo.html';
       } else {
         projectUrl = project.projectUrl;
