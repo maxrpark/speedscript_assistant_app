@@ -1,4 +1,4 @@
-import { ref } from '@/../../node_modules/speedscript/lib/index.js';
+import { ref } from 'speedscript';
 import { todoList } from '../todo.js';
 
 const todoContainer = ref('todoContainer');

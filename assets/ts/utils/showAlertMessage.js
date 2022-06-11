@@ -1,4 +1,4 @@
-import { ref } from '@/../../node_modules/speedscript/lib/index.js';
+import { ref } from 'speedscript';
 import { isEditing } from '../todo.js';
 const showAlert = ref('alert-box');
 const alertText = ref('alert-text');
