@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "rootDir": "./ts-files",
+
+    "outDir": "./assets",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}
