@@ -1,4 +1,4 @@
-let { ref } = require('speedscript');
+import { ref } from '../../../node_modules/speedscript/lib/index.js';
 import { isEditing } from '../todo.js';
 
 const showAlert = ref('alert-box');

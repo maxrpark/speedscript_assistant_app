@@ -1,5 +1,4 @@
-// import { ref, useFetch } from '../../node_modules/speedscript/lib/index.js';
-let { ref, useFetch } = require('speedscript');
+import { ref, useFetch } from '../../node_modules/speedscript/lib/index.js';
 import showYear from './utils/showYear.js';
 showYear();
 const title = ref('mainTitle');
